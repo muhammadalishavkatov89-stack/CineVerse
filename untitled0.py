@@ -7,7 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1ZmyP7UtSHV8mkGi_UOuw9hMp5VlWhSod
 """
 
-!pip install python-telegram-bot nest_asyncio
 
 import os
 from telegram import Update, ReplyKeyboardMarkup
