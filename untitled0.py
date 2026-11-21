@@ -45,15 +45,15 @@ async def buttons(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == "ℹ️ Bot haqida":
         await update.message.reply_text("🎬 CineVerse — kino ma'lumotlari boti!")
 
-async def main():
+def main():
     app = Application.builder().token(TOKEN).build()
+
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, buttons))
 
-    await app.initialize()
-    await app.start()
-    await app.updater.start_polling()
-
     print("🎬 CineVerse ishga tushdi!")
+    app.run_polling()
 
-await main()
+
+if __name__ == "__main__":
+    main()
