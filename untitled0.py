@@ -8,13 +8,16 @@ Original file is located at
 """
 
 !pip install python-telegram-bot nest_asyncio
-import nest_asyncio
-nest_asyncio.apply()
 
+import os
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "9280766866:AAHbsEagE3boHR01uNuf3-UAllyYw_5LV0Q"
+TOKEN = os.environ["TOKEN"]
+from telegram import Update, ReplyKeyboardMarkup
+from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
+
+TOKEN = os.environ["9280766866:AAHbsEagE3boHR01uNuf3-UAllyYw_5LV0Q"]
 
 keyboard = [
     ["🔎 Kino qidirish", "⭐ Mashhur kinolar"],
