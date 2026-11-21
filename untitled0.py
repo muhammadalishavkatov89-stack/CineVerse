@@ -14,7 +14,7 @@ nest_asyncio.apply()
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "9280766866:AAF-CxbXNgemwfyhQ0i2aclqmcioldeN8HQ"
+TOKEN = "9280766866:AAHbsEagE3boHR01uNuf3-UAllyYw_5LV0Q"
 
 keyboard = [
     ["🔎 Kino qidirish", "⭐ Mashhur kinolar"],
